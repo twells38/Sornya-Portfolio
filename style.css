@@ -658,11 +658,10 @@ color: var(--white-color);
     #menu-icon{
         display: block;
         margin-right: 4rem;
-        
     }
     #darkMode-icon{
         position: absolute;
-        right: 11rem;
+        right: 11rem; 
         font-size: 2.6rem;
         margin-bottom: 0.1rem;
     }
@@ -684,7 +683,7 @@ color: var(--white-color);
         display: block;
     }
     .navigation a{
-        display: flex;
+        display: block;
         font-size: 2rem;
         margin: 3rem 6rem;
         color: var(--text-color);
@@ -830,9 +829,7 @@ color: var(--white-color);
            font-size: 50%;
        }
       
-        
-    }
-       .about .profession-container .overlay{
+        .about .profession-container .overlay{
         top: 73rem;
         right: 0;
         transform: rotate(90deg) translate(-50%,50%) scaleY(2);
