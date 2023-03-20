@@ -657,10 +657,11 @@ color: var(--white-color);
     
     #menu-icon{
         display: block;
+        margin-right: 3rem;
     }
     #darkMode-icon{
         position: absolute;
-        right: 7rem;
+        right: 8rem;
         font-size: 2.6rem;
         margin-bottom: 0.1rem;
     }
