@@ -963,7 +963,7 @@ color: var(--white-color);
     }
     @media screen and (max-width:414px){
        .home-image #text{
-         margin-top: 40rem;
+         margin-top: 30rem;
          font-size: 1.5rem;
         }
         .about .profession-container .profession-box{
