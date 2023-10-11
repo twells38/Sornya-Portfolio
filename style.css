@@ -98,12 +98,11 @@ header{
 }
 .dark-mode{
     --background:#4b4953;
-    --text-color: #fdfdfd;
+    --text-color: white;
     --shadow-color: rgb(241, 233, 233);
     --bg-color:#333;
-    
-    
 }
+
 /*.parallax{
     position: relative;
     display: flex;
@@ -360,7 +359,7 @@ section{
 #about-wrapper .about-right h1 {
   text-transform: uppercase;
   font-weight: 300;
-  color: black;
+  color: var(--text-color);
   margin-bottom: 10px;
   text-align: center;
 }
@@ -368,7 +367,7 @@ section{
   color: var(--span-color);
 }
 #about-wrapper .about-right h2 {
-  color: rgb(92, 91, 91);
+  color: var(--text-color);
   font-weight: 300;
   font-size: 20px;
   padding: 5px 0;
@@ -376,6 +375,7 @@ section{
 #about-wrapper .about-right h2 span {
   color:var(--span-color);
 }
+
 #about-wrapper .about-btns {
   position: relative;
   margin: 1rem 1rem;
@@ -396,18 +396,30 @@ section{
 }
 #about-wrapper .about-btns .btn-pink {
   background-color:var(--span-color);
-  color: white;
+  
   border-color:var(--span-color);
   transition: all 0.8s ease-in-out;
 }
+#about-wrapper .btn-pink a{
+color: white;
+}
+
 #about-wrapper .about-btns .btn-pink:hover {
   background: transparent;
   border-collapse: var(--span-color);
-  color: black;
 }
-#about-wrapper .about-btns .btn-white {
-  transition: all 0.8s ease-in-out;
+#about-wrapper .btn-pink a:hover{
+    color: black;
+    
 }
+#about-wrapper .about-btns .btn-white{
+ transition: all 0.8s ease-in-out;
+}
+#about-wrapper .about-btns .btn-white a{
+  
+  color:var(--text-color);
+}
+
 #about-wrapper .about-btns .btn-white:hover {
   background: var(--span-color);
   border-color:var(--span-color);
@@ -415,27 +427,13 @@ section{
 }
 
 #about-wrapper .about-description p {
-  color: black;
+  color:var(--text-color);
   font-size: 20px;
   letter-spacing: 0.2px;
   opacity: 0.6;
   text-align: left;
 }
-#about-wrapper .btn-view {
-  border: none;
-  background: transparent;
-  font-size: 0.9rem;
-  padding: 6px;
-  margin: 5px;
-  border: 2px solid#711414;
-  border-radius: 15px;
-  transition: 1s ease;
-  cursor: pointer;
-}
-#about-wrapper .btn-view:hover {
-  color: white;
-  background-color:#711414;
-}
+
 /*start technical skills*/
 .technical-skills{
     background: var(--background);
@@ -485,6 +483,9 @@ section{
 }
 .technical-skills span{
     color: var(--span-color);
+}
+.technical-skills h3{
+    color: var(--text-color);
 }
 
 /*start portfolio*/
