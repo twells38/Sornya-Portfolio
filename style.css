@@ -46,10 +46,6 @@ header{
 .header.sticky{
     background: var(--bg-color);
     box-shadow: 0 0.1rem 1.8rem var(--shadow-color);
-    
-    
-   
-    
 }
 /* start menu icon*/
    #menu-icon{
@@ -269,6 +265,7 @@ section{
    }
    #about-wrapper .about-left-content{
     box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.39);
+    margin-top: 4.5rem;
    }
    #about-wrapper .about-me-image{
     overflow: hidden;
@@ -281,6 +278,7 @@ section{
     height: 200px;
     border-radius: 50%;
     filter: sepia(0.5);
+   
    }
    #about-wrapper .shadow{
     margin-left: auto;
@@ -356,6 +354,10 @@ section{
   margin: 0 0 0 3rem;
   
 }
+#about-wrapper .section-title{
+    font-size: 2.5rem;
+    letter-spacing: 1.2rem;
+}
 #about-wrapper .about-right h1 {
   text-transform: uppercase;
   font-weight: 300;
@@ -416,7 +418,6 @@ color: white;
  transition: all 0.8s ease-in-out;
 }
 #about-wrapper .about-btns .btn-white a{
-  
   color:var(--text-color);
 }
 
@@ -432,6 +433,7 @@ color: white;
   letter-spacing: 0.2px;
   opacity: 0.6;
   text-align: left;
+  text-indent: 20px;
 }
 
 /*start technical skills*/
@@ -458,8 +460,8 @@ color: white;
   margin: 2rem -2px 2rem 0;
 }
 .icon-container {
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
   border: 3px solid #eade83;
   background-color: var(--span-color);
   margin-bottom: 2rem;
@@ -472,7 +474,7 @@ color: white;
   margin: auto;
   transform: rotate(-45deg);
 }
-.technical-skills .section-heading{
+ .technical-skills .section-heading{
     color: var(--text-color);
     font-size: 2rem;;
     font-weight: 700;
@@ -504,17 +506,17 @@ color: white;
     margin-left: 1.5rem;
     
 }
-.projects .project-container .heading{
+.projects .section-heading{
     color: var(--text-color);
-    font-size: 3rem;
+    font-size: 2rem;;
     font-weight: 700;
     letter-spacing: 2rem;
     margin-bottom: 3.5rem;
     text-align: center;
     text-transform: uppercase;
-}
-.projects .project-container{
     
+}
+.projects .container{
     display: flex;
     flex-direction: column;
    /* align-items: stretch;*/
@@ -530,6 +532,7 @@ color: white;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
 .projects .project-box{
     width: 400px;
     padding: 2rem;
@@ -547,6 +550,7 @@ color: white;
 
 .project-box img{
     margin-left: 1.1rem;
+    width: 300px;
 }
 .project-box ol{
     margin-left: 20px;
@@ -623,41 +627,23 @@ color: white;
 
 @media(max-width:1400px){
     html{
-        font-size: 55%;
+        font-size: 90%;
     }
     
-    .about .profession-container{
-        height: 85.8rem;
-    }
-    .about .profession-container .profession-box{
-        right: -12rem;
-        height: 85.8rem;
-    }
-    .about .overlay{
-        right: -9rem;
-    }
     .project-box img{
-     margin-left: 3rem;
-     margin-top: 1.5rem;
+     text-align: center;
+     
     }
-    
+    #about-wrapper{
+    grid-template-columns: repeat(1,1fr);
+   }
+   #about-wrapper .about-right{
+    margin-top:3rem;
+   }
 }
 
  @media(max-width: 1024px){
-    .header{
-        padding: 2rem 3%;
-    }
-    section{
-        padding: 10rem 3% 2rem;
-    }
-    .about .profession-container .profession-box{
-        right: -22rem;
-    }
     
-    
-    .about .profession-container .overlay{
-        right: -15rem;
-    }
     
     .project-box img{
      margin-left: 3rem;
@@ -666,41 +652,30 @@ color: white;
     .projects .project-container .heading{
         margin-top: 5rem;
     }
-    .contact .section-title{
-        margin-top: 5rem;
-    }
+    
 
 
  }
-@media(max-width: 991px){
-    
-    .about .about-content{
-        max-width: 50rem;
+ 
+@media(max-width:1000px){
+    .projects .project-box img{
+        margin-left: 20px;
     }
-    .about .profession-container .profession-box{
-        right: -45rem;
-    }
-    .about .profession-container .overlay{
-        right: -39.5rem;
-    }
-    
-     
 }
 @media (max-width:768px){
     
     #menu-icon{
         display: block;
-        margin-right: 4rem;
-    }
+        }
     #darkMode-icon{
         position: absolute;
-        right: 11rem; 
+        right: 3rem; 
         font-size: 2.6rem;
         margin-bottom: 0.1rem;
     }
     .header .logo{
         width:50px;
-        margin-left: 1.7rem;
+        
     }
     .navigation{
         position: absolute;
@@ -725,172 +700,48 @@ color: white;
     .navigation a::before{
         display: none;
     }
-    .about {
-        padding: 0 3% 23rem;
-        justify-content: center;
-        text-align: center;
-    } 
-    .about .about-content{
-        margin-top: -6rem;
+    .icon-container {
+         width: 4rem;
+         height: 4rem;
     }
-    .about-content h3{
-        font-size: 2.6rem;
-        
-    }
-    .about-content h1{
-        font-size: 3.5rem;
-    }
-    .about-content p{
-        padding: 10px;
-    }
-    
-   .about .profession-container{
-        
-        left: 0;
-        width: 100%;
-        height: 100%;
-        
-    }
-   .about .profession-container .profession-box{
-        position: fixed;
-        top: 90%;
-        left: 15%; 
-        width: 300px;
-        height: 300px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-       /* border: 2px solid var(--text-color); */
-        
-    } 
-     .about .profession-box .profession{
-        padding: 0 13px;
-        left: auto;
-        transform-origin: 0;
-    }
-    .about .profession h3{
-        font-size: 12px;
-    }
-    .about .profession-box .profession:nth-child(1){
-        transform: rotate(-70deg) translate(-40px,-180px);
-        
-    }
-    .about .profession-box .profession:nth-child(1){
-        margin-right: 0;
-        
-    }
-    .about .profession-box .profession:nth-child(2){
-        transform: rotate(-120deg) translate(-70px,-180px);
-        
-    }
-    .about .profession-box .profession:nth-child(3){
-        transform: rotate(-170deg) translate(-100px,-190px);
-        
-    } 
-    .about .profession-box .profession:nth-child(4){
-        transform: rotate(-200deg) translate(-80px,-210px);
-        
-    }
-    .about .profession-box .profession:nth-child(5){
-        transform: rotate(-240deg) translate(-80px,-230px);
-        
-    }
-    .about .profession-box .profession:nth-child(6){
-        transform: rotate(-300deg)translate(-40px,-240px);
-    } 
-    
-    .about .profession-box .profession:nth-child(7){
-        transform: rotate(-340deg) translate(-40px, -210px);
-    } 
-    .about .profession-box .profession:nth-child(8){
-        transform: rotate(-380deg) translate(-40px, -200px);
-    } 
-    .about .profession-box .circle{
-        position: fixed;
-        width: 400px;
-        height: 400px;
-        z-index: -1; 
-    } 
-    
-    .about .profession-container .overlay{
-        position: fixed;
-        top: 77rem;
-        left: 50%;
-        right: 0;
-        transform: rotate(90deg) translate(-50%,50%) scaleY(2);
-        border-width: 23.9rem; 
-
-    }
-    .projects .heading span{
-        display: inline-block;
-    }
-  
-    
-    .contact .contact-items{
-        display: flex;
-        flex-direction: column;
-        min-width: 20vh;
-        
-    }
-    .contact .contact-item{
-        width: 90%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        
+     .my-skills {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(12rem, 3fr));
+         grid-gap: 1.5rem;
     }
 }
-   @media (max-width:617px){
-       .projects .project-box{
-        width: 370px;
-        padding: 2rem;
-        margin: 2rem;
-       }
    
-      .projects .project-box img{
-          width: 280px;
-      }
-      .projects .project-layer p{
-          font-size: 1.4rem;;
-      }
-      
-   }
    @media (max-width:450px){
        html{
            font-size: 50%;
        }
-      
-        .about .profession-container .overlay{
-        top: 73rem;
-        right: 0;
-        transform: rotate(90deg) translate(-50%,50%) scaleY(2);
-        border-width: 23.9rem; 
+       .header .logo{
+        position: relative;
+        left: -7rem;
        }
-       .projects .project-box{
+      #darkMode-icon{
+        position: absolute;
+    }
+      .icon-container {
+         width: 6rem;
+         height: 6rem;
+    }
+     .projects .project-box{
            width: 340px;
        }
        .projects .project-box img{
-          width: 240px;
+          width: 260px;
       }
+      .projects .project-layer p,h4,h5,li{
+        font-size: 1.6rem;;
+       }
+        
+       
     }
     @media(max-width:365px){
-        .about .profession-container .profession-box{
-        top: 103%;
-        left: 5%; 
-        } 
-        .about .profession-container .overlay{
-        transform: rotate(90deg) translate(-50%,50%) scaleY(1);
-        }
-        .projects .project-box{
-        width: 300px;
-        padding: 2rem;
-        margin: 2rem;
-       }
-       .projects .project-box img{
-          width: 200px;
-      }
+       
+        
+       
 
     }
   
